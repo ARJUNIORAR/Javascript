@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        var n1 = Number.parseInt(window.prompt("Digite um numero: ")) // recebe um valor string quando está sem o Number.parseInt, quando coloca converte para valor numerico, nesse caso parseint é para numero inteiro
+        var n2 = Number.parseFloat(window.prompt ("Digite outro numero: ")) // recebe um valor string quando está sem o Number.parsefloat, quando coloca converte para valor numerico, nesse caso parseint é para numero flutuante
+        //* também pode usar apenas o Number, quando eu não quiser definir o tipo.
+        var s = n1 + n2
+        window.alert("A soma dos valores é " + s + " ! ")
+        // Exemplo de linha acima utilizando o Plass Roader, é mais indicado.
+        //window.alert(`A soma de ${n1} e ${n2} é ${s}`) Lembrando que se utiliza Craze.
+
+        // + serve para concatenação quando é (String + string)
+        // + para adição Quando é (Number + number)
+
+        //Quando eu quiser converter de numero para strinf posso utilizar: String(n) ou n.tostring()
+   </script>
+</body>
+</html>
