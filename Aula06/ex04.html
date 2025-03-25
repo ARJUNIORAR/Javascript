@@ -7,7 +7,11 @@
 </head>
 <body>
     <script>
-        var nome = window.prompt('Qual é seu nome')
+        var nome = window.prompt('Qual é seu nome ?')
+        document.write(`<h2> Olá ${nome} Seu nome tem ${nome.length} letras</h2>.<br/>`) //Esse comando vai fazer com que seja buscado a string  axiba na tela, também é possivel usar tag de html detro da string.
+        document.write(`Seu nome em letras maisculas é ${nome.toUpperCase()}<br/>`)// essa Linha vai colocar meu nome em maiusculo
+        document.write(`Seu nome em letras minusculas é ${nome.toLowerCase()}<br/>`)
+        //Também é possivel usar estilo CSS utilizando style para tamanho da letra e demais açôes.
     </script>
 </body>
 </html>
