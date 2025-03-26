@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+            font-family: normal 18pt Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+<body> 
+    <h1>Primeiros passos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div>Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Está escrito assim: ' + p1.innerText) //Essa função está buscando o primeiro paragrafo. Os paragrafos são definidos por numeração iniciando o [0] Essa mesma função pode ser usada para pegar o html inteiro, basta trocar o innerText por innerHTML
+
+        //Esse é um exemplo de como selecionar objetos por Marca.
+
+
+        // por ID uso getElementByld()
+        // por nome getElementsByNeme()
+        // por classe getElementByClassName
+        // por seletor querySelector() ou querySelectorAll()
+
+        //exemplo de query: d = window.document.querySelector('div#msg')
+        //seleciona e altera com os comandos Style. Ex: d.style.color = 'blue' 
+        //lembrando que tem que usar o id ou class na tag.
+        
+    </script>
 </body>
 </html>
