@@ -50,18 +50,9 @@
             a.innerText = 'Saiu!'
             a.style.background = 'green'
         }
-        //Forma acima diz como disparar a função de cordo com as ações no html.
-    </script>
-    <div id="div" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
-        Interaja...
-    </div>
-    <script>
-        var b = window.document.getElementById('div')
-        function clicar(){
-            b.innerText = 'clicou'
-
-        }
-
+        //Forma acima diz como disparar a função usando JS, a versäo comentada abaixo mostra como fazer direto na tag HTML.
+        // na <div id 'area' onclick = "clicar ()" onmouseenter()"entrar()" onmouseout="sair()">
+        // se fizer dessa forma sai os addEventList
     </script>
 </body>
 </html>
