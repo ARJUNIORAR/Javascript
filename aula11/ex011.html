@@ -7,7 +7,26 @@
 </head>
 <body>
     <h1>Verificando Nacionalidade</h1>
-    <input type="text" >
-    
+    Digite seu pais:<input type="text" name="nac" id="nac01">
+    <input type="button" value="Verificar" onclick="buscar()">
+    <div id="Resultado">
+
+    </div>
+    <script>
+        function buscar(){
+            var n = window.document.getElementById('nac01')
+            var res = window.document.getElementById('resultado')
+            var nacionalidade = String(n)
+            if (n == 'Brasil') {
+               res01 = innerHTML ` Você possui o visto Brasileiro`
+            }
+            else{
+                innerHTML `Você é estrangeiro`
+
+            }
+           
+            
+        }
+    </script>
 </body>
 </html>
