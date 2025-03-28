@@ -4,13 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somando Numeros</title>
+    <style>
+        body{
+            background-color: rgb(225, 238, 238);
+        }
+        section > div{
+            background-color: aliceblue;
+            color: black;
+            padding:top 10px;
+            width: 450px;
+            height: 200px;
+            margin-left: 250px;
+            border-radius: 10px 10px 10px 10px;
+            box-shadow: black 10px;
+                  
+        }
+        div#res{
+            margin-top: 110px;
+            background-color: rgba(11, 240, 11, 0.795);
+            border: 10px;
+            border-radius: 1px;
+            width: 120PX;
+        }
+        h1{
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1>Somando valores</h1>
-    <input type="number" name="txtn1" id="txtn1"> +
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="somar" onclick="somar()">
-    <div id="res">Resultado</div>
+        <section>
+            <div>
+                <h1>Somando valores</h1>
+                <input type="number" name="txtn1" id="txtn1"> +
+                <input type="number" name="txtn2" id="txtn2">
+                <input type="button" value="somar" onclick="somar()">
+                    <div id="res">RESULTADO: </div>
+            </div>
+        </section>
     <script>
         function somar(){
             var tn1 = window.document.getElementById('txtn1')
@@ -19,7 +54,7 @@
             var n1 = Number(tn1.value)
             var n2 = Number(tn2.value)
             var s = n1 + n2
-            res.innerHTML = ` A soma entre ${n1} e ${n2} é igual a ${s}`
+            res.innerHTML = ` RESULTADO: ${s}`
     
         }
     </script>
